@@ -1,4 +1,141 @@
-:root, body {
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* sizes */
+  --mobile-small-width: 320px;
+  --mobile-big-width: 425px;
+  --tablet-width: 768px;
+
+  /* color building */
+  --primary-000: rgb(246, 253, 255);
+  --primary-500: rgb(94, 149, 207);
+  --primary-1000: rgb(0, 1, 18);
+
+  --primary-100: color-mix(in srgb, var(--primary-000) 80%, var(--primary-500));
+  --primary-200: color-mix(in srgb, var(--primary-000) 60%, var(--primary-500));
+  --primary-300: color-mix(in srgb, var(--primary-000) 40%, var(--primary-500));
+  --primary-400: color-mix(in srgb, var(--primary-000) 20%, var(--primary-500));
+  --primary-600: color-mix(in srgb, var(--primary-1000) 20%, var(--primary-500));
+  --primary-700: color-mix(in srgb, var(--primary-1000) 40%, var(--primary-500));
+  --primary-800: color-mix(in srgb, var(--primary-1000) 60%, var(--primary-500));
+  --primary-900: color-mix(in srgb, var(--primary-1000) 80%, var(--primary-500));
+
+  --white-000: color-mix(in srgb, white 9%, gray);
+  --white-100: color-mix(in srgb, white 18%, gray);
+  --white-200: color-mix(in srgb, white 27%, gray);
+  --white-300: color-mix(in srgb, white 36%, gray);
+  --white-400: color-mix(in srgb, white 45%, gray);
+  --white-500: color-mix(in srgb, white 54%, gray);
+  --white-600: color-mix(in srgb, white 63%, gray);
+  --white-700: color-mix(in srgb, white 72%, gray);
+  --white-800: color-mix(in srgb, white 81%, gray);
+  --white-900: color-mix(in srgb, white 90%, gray);
+  --white-1000: color-mix(in srgb, white 99%, gray);
+
+
+  --black-000: color-mix(in srgb, gray 9%, black);
+  --black-100: color-mix(in srgb, gray 18%, black);
+  --black-200: color-mix(in srgb, gray 27%, black);
+  --black-300: color-mix(in srgb, gray 36%, black);
+  --black-400: color-mix(in srgb, gray 45%, black);
+  --black-500: color-mix(in srgb, gray 54%, black);
+  --black-600: color-mix(in srgb, gray 63%, black);
+  --black-700: color-mix(in srgb, gray 72%, black);
+  --black-800: color-mix(in srgb, gray 81%, black);
+  --black-900: color-mix(in srgb, gray 90%, black);
+  --black-1000: color-mix(in srgb, gray 99%, black);
+
+  /* textures */
+  --black-texture: url("./bg-tiles/blackorchid.png");
+  --dark-gray-texture: url("./bg-tiles/dark_Tire.png");
+
+  --white-texture: url("./bg-tiles/crossword.png");
+  --light-gray-texture: url("./bg-tiles/dust_scratches.png");
+}
+
+.light {
+  --primary: var(--primary-600);
+  --accent: var(--primary-400);
+  --bg-1: var(--white-900);
+  --bg-2: var(--white-700);
+  --text-1: var(--black-100);
+  --text-2: var(--black-200);
+  --bg-1-texture: var(--white-texture);
+  --bg-2-texture: var(--light-gray-texture);
+}
+
+.dark {
+  --primary: var(--primary-400);
+  --accent: var(--primary-600);
+  --bg-1: var(--black-300);
+  --bg-2: var(--black-100);
+  --text-1: var(--white-900);
+  --text-2: var(--white-800);
+  --bg-1-texture: var(--black-texture);
+  --bg-2-texture: var(--dark-gray-texture);
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  color: var(--text-1);
+  background-color: var(--bg-1);
+  background-image: var(--bg-1-texture);
+}
+
+header {
+  display: flex;
+  justify-self: center;
+  width: 100vw;
+  height: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bg-2);
+  background-image: var(--bg-2-texture);
+}
+
+.toggles-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.language-toggle img {
+  width: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+nav ul a {
+  color: unset;
+  text-decoration: none;
+}
+
+footer {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 2rem;
+  bottom: 0;
+  background-color: var(--bg-2);
+  background-image: var(--bg-2-texture);
+}
