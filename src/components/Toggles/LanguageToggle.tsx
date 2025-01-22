@@ -5,31 +5,35 @@ import { useTranslation } from "react-i18next";
 import "./LanguageToggle.css";
 
 const LanguageToggle = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeLang, setActiveLang] = useState(i18n.language); // default to current language
 
   const handleLanguageChange = (lang: "en" | "es") => {
-    i18n.changeLanguage(lang); // change language
-    setActiveLang(lang); // update active language
+    i18n.changeLanguage(lang);
+    setActiveLang(lang);
   };
 
   return (
-    <div className="language-toggle">
-      <img
-        src={IconEN}
-        alt="english"
-        title="english"
-        className={activeLang === "en" ? "active" : ""}
-        onClick={() => handleLanguageChange("en")}
-      />
-      <img
-        src={IconES}
-        alt="spanish"
-        title="spanish"
-        className={activeLang === "es" ? "active" : ""}
-        onClick={() => handleLanguageChange("es")}
-      />
-      <span>{activeLang}</span>
+    <div className="language-toggle" title={t("toggles.language-toggle")} onClick={() => handleLanguageChange(activeLang === "es" ? "en" : "es")}>
+      <div className="flags-selector">
+        <img
+          src={IconEN}
+          alt="english"
+          title={t("toggles.english")}
+          draggable="false"
+          className={activeLang === "en" ? "active" : ""}
+          onClick={(e) => { e.stopPropagation(); handleLanguageChange("en") }}
+        />
+        <img
+          src={IconES}
+          alt="spanish"
+          title={t("toggles.spanish")}
+          draggable="false"
+          className={activeLang === "es" ? "active" : ""}
+          onClick={(e) => { e.stopPropagation(); handleLanguageChange("es") }}
+        />
+      </div>
+      <span><strong>{activeLang.toUpperCase()}</strong></span>
     </div>
   );
 };

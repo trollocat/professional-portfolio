@@ -1,9 +1,17 @@
 {
+  "toggles": {
+    "spanish": "Español",
+    "english": "Inglés",
+    "language-toggle": "Cambiar idioma",
+    "dark": "Tema oscuro",
+    "light": "Tema claro",
+    "theme-toggle": "Cambiar tema"
+  },
   "nav": {
-    "home": "inicio",
-    "projects": "proyectos",
-    "gallery": "galería",
-    "about": "contacto"
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "gallery": "Galería",
+    "about": "Contacto"
   },
   "home": {
     "introduction": "Me llamo <strong>Joan Gonzalez</strong>, soy <strong>desarrollador frontend</strong> y <strong>diseñador gráfico</strong>.",

@@ -1,9 +1,17 @@
 {
+  "toggles": {
+    "spanish": "Spanish",
+    "english": "English",
+    "language-toggle": "Toggle language",
+    "dark": "Dark theme",
+    "light": "Light theme",
+    "theme-toggle": "Toggle theme"
+  },
   "nav": {
-    "home": "home",
-    "projects": "projects",
-    "gallery": "gallery",
-    "about": "about"
+    "home": "Home",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "about": "About"
   },
   "home": {
     "introduction": "My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>.",
