@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "home",
+    "projects": "projects",
+    "gallery": "gallery",
+    "about": "about"
+  },
+  "home": {
+    "introduction": "My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>.",
+    "calltoaction": {
+      "button1": "My projects",
+      "button2": "My designs"
+    }
+  }
+}

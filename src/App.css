@@ -56,8 +56,8 @@
 .light {
   --primary: var(--primary-600);
   --accent: var(--primary-400);
-  --bg-1: var(--white-900);
-  --bg-2: var(--white-700);
+  --bg-1: var(--white-1000);
+  --bg-2: var(--white-800);
   --text-1: var(--black-100);
   --text-2: var(--black-200);
   --bg-1-texture: var(--white-texture);
@@ -67,8 +67,8 @@
 .dark {
   --primary: var(--primary-400);
   --accent: var(--primary-600);
-  --bg-1: var(--black-300);
-  --bg-2: var(--black-100);
+  --bg-1: var(--black-000);
+  --bg-2: var(--black-200);
   --text-1: var(--white-900);
   --text-2: var(--white-800);
   --bg-1-texture: var(--black-texture);
@@ -80,6 +80,7 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -92,39 +93,6 @@ body,
   color: var(--text-1);
   background-color: var(--bg-1);
   background-image: var(--bg-1-texture);
-}
-
-header {
-  display: flex;
-  justify-self: center;
-  width: 100vw;
-  height: 3rem;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--bg-2);
-  background-image: var(--bg-2-texture);
-}
-
-.toggles-container {
-  display: flex;
-  gap: 2rem;
-}
-
-.language-toggle img {
-  width: 2rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
-}
-
-nav ul a {
-  color: unset;
-  text-decoration: none;
 }
 
 footer {

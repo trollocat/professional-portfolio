@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "inicio",
+    "projects": "proyectos",
+    "gallery": "galería",
+    "about": "contacto"
+  },
+  "home": {
+    "introduction": "Me llamo <strong>Joan Gonzalez</strong>, soy <strong>desarrollador frontend</strong> y <strong>diseñador gráfico</strong>.",
+    "calltoaction": {
+      "button1": "Mis proyectos",
+      "button2": "Mis diseños"
+    }
+  }
+}

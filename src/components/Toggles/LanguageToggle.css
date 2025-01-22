@@ -1,0 +1,22 @@
+.language-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    background-color: var(--bg-1);
+    border-radius: 0.5rem;
+}
+
+.language-toggle img {
+    cursor: pointer;
+    width: 2rem;
+    filter: grayscale();
+    transition: filter 0.1s;
+}
+
+.language-toggle img.active {
+    filter: unset;
+}
+
+.language-toggle span {
+    margin: 0 0.5rem;
+}
