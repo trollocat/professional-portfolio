@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconEN from '../../assets/en.svg';
 import IconES from '../../assets/es.svg';
 import { useTranslation } from "react-i18next";
@@ -13,8 +13,13 @@ const LanguageToggle = () => {
     setActiveLang(lang);
   };
 
+  useEffect(() => {
+    const title = activeLang === "en" ? "Joan Gonzalez's Portfolio" : "Portafolio de Joan Gonzalez";
+    document.title = title;
+  }, [activeLang])
+
   return (
-    <div className="language-toggle" title={t("toggles.language-toggle")} onClick={() => handleLanguageChange(activeLang === "es" ? "en" : "es")}>
+    <button type="button" className="language-toggle" title={t("toggles.language-toggle")} onClick={() => handleLanguageChange(activeLang === "es" ? "en" : "es")}>
       <div className="flags-selector">
         <img
           src={IconEN}
@@ -34,7 +39,7 @@ const LanguageToggle = () => {
         />
       </div>
       <span><strong>{activeLang.toUpperCase()}</strong></span>
-    </div>
+    </button>
   );
 };
 

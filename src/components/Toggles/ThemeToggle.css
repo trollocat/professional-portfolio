@@ -7,7 +7,7 @@
 
 .theme-toggle:hover {
     cursor: pointer;
-    background-color: var(--bg-2);
+    background-color: var(--fg-1);
 }
 
 .theme-toggle img {

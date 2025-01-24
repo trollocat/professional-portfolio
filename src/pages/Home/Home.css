@@ -9,14 +9,6 @@
     gap: 2rem;
 }
 
-.hero-card {
-    background-color: var(--bg-2);
-    background-image: var(--bg-2-texture);
-    background-repeat: repeat;
-    padding: 2rem;
-    border: 1px linear-gradient(red, black) solid;
-}
-
 .hero-main {
     display: flex;
     align-items: center;
@@ -27,11 +19,11 @@
 }
 
 .dummy-spacing {
-    flex: 1;
+    flex: 8;
 }
 
 .hero-main p {
-    flex: 1;
+    flex: 10;
     padding: 0;
     margin: 0;
     font-size: 2rem;

@@ -7,15 +7,15 @@ export default function Home() {
 
   return (
     <div className="hero-wrapper" >
-      <div className="hero-main hero-card">
+      <div className="hero-main card">
         <img src="portrait_transparent.webp" alt="portrait" />
         <div className='dummy-spacing'></div>
         <p>
         <Trans t={t} i18nKey="home.introduction" />
         </p>
       </div>
-      <div className="hero-secondary hero-card">{t('home.calltoaction.button1')}</div>
-      <div className="hero-secondary hero-card">{t('home.calltoaction.button2')}</div>
+      <div className="hero-secondary card">{t('home.calltoaction.button1')}</div>
+      <div className="hero-secondary card">{t('home.calltoaction.button2')}</div>
     </div>
   )
 }

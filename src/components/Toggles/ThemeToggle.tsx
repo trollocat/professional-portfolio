@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="theme-toggle"
+    <button type="button" className="theme-toggle"
       title={t("toggles.theme-toggle")}
       onClick={() =>
         themeDispatch({
@@ -22,19 +22,19 @@ const ThemeToggle = () => {
           ?
           <img
             src={IconDark}
-            alt="dark"
-            title="dark"
+            alt={t("toggles.dark")}
+            title={t("toggles.dark")}
             className="active dark"
           />
           :
           <img
             src={IconLight}
-            alt="light"
-            title="light"
+            alt={t("toggles.light")}
+            title={t("toggles.light")}
             className="active light"
           />
       }
-    </div>
+    </button>
   );
 };
 

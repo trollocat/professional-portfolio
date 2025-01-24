@@ -11,10 +11,7 @@ export const Header = () => {
   return (
     <header>
       <div className="header-container">
-        <div className="toggles-container">
-          <LanguageToggle></LanguageToggle>
-          <ThemeToggle></ThemeToggle>
-        </div>
+        <LanguageToggle />
         <nav>
           <ul>
             <li>
@@ -36,13 +33,14 @@ export const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about">
-                {t("nav.about")}
+              <NavLink to="/contact">
+                {t("nav.contact")}
                 <div className="light-bar" />
               </NavLink>
             </li>
           </ul>
         </nav>
+        <ThemeToggle />
       </div>
     </header>
   )

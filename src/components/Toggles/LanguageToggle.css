@@ -6,15 +6,17 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     gap: 0.5rem;
+    color: var(--text-1);
+    font-family: "Montserrat", sans-serif;
 }
 
 .language-toggle:hover {
-    background-color: var(--bg-2);
+    background-color: var(--fg-1);
     cursor: pointer;
 }
 
 .language-toggle:hover> :not(.flags-selector) {
-    background-color: var(--bg-2);
+    background-color: var(--fg-1);
 }
 
 .flags-selector {
@@ -26,7 +28,7 @@
     height: 2rem;
     opacity: 0.8;
     filter: grayscale();
-    transition: filter 0.2s, opacity 0.2s, outline 0.2s;
+    transition: filter 0.2s, opacity 0.2s;
 }
 
 .language-toggle .flags-selector img.active {

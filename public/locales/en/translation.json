@@ -11,10 +11,10 @@
     "home": "Home",
     "projects": "Projects",
     "gallery": "Gallery",
-    "about": "About"
+    "contact": "Contact"
   },
   "home": {
-    "introduction": "My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>.",
+    "introduction": "Hi! My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>, based in <strong>Argentina</strong>.",
     "calltoaction": {
       "button1": "My projects",
       "button2": "My designs"
