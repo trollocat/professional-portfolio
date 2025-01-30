@@ -1,8 +1,8 @@
-import { useTheme } from "../../providers/useTheme";
-import IconDark from '../../assets/dark.svg';
-import IconLight from '../../assets/light.svg';
+import { useTheme } from "../../../providers/useTheme";
 import { useTranslation } from "react-i18next";
 import "./ThemeToggle.css"
+import LightIcon from "../../Icons/Theme/LightIcon";
+import DarkIcon from "../../Icons/Theme/DarkIcon";
 
 const ThemeToggle = () => {
   const { state: themeState, dispatch: themeDispatch } = useTheme();
@@ -20,19 +20,9 @@ const ThemeToggle = () => {
       {
         themeState.theme === "light"
           ?
-          <img
-            src={IconDark}
-            alt={t("toggles.dark")}
-            title={t("toggles.dark")}
-            className="active dark"
-          />
+          <DarkIcon />
           :
-          <img
-            src={IconLight}
-            alt={t("toggles.light")}
-            title={t("toggles.light")}
-            className="active light"
-          />
+          <LightIcon />
       }
     </button>
   );

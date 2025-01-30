@@ -1,0 +1,49 @@
+.expandable-container {
+    cursor: pointer;
+    transition: height 0.5s ease;
+}
+
+@media (prefers-reduced-motion) {
+    .expandable-container {
+        transition: none;
+    }
+}
+
+.expandable-container.collapsed {
+    height: 8rem;
+}
+
+.expandable-container.expanded {
+    height: 20rem;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+article .content {
+    width: 65ch;
+    font-size: 1.25rem;
+}
+
+article h1 {
+    margin: 0;
+}
+
+.technologies {
+    display: flex;
+    gap: 1rem;
+}
+
+article .handle {
+    height: .5rem;
+    margin: 0 auto;
+    max-width: 20rem;
+    border-radius: 1rem;
+    background-color: var(--text-2);
+}

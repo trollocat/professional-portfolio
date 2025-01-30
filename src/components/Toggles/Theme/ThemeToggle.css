@@ -1,5 +1,7 @@
 .theme-toggle {
     display: flex;
+    color: var(--text-1);
+    font-size: 2rem;
     background-color: var(--bg-1);
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -8,13 +10,4 @@
 .theme-toggle:hover {
     cursor: pointer;
     background-color: var(--fg-1);
-}
-
-.theme-toggle img {
-    height: 2rem;
-    opacity: 90%;
-}
-
-.theme-toggle img.light {
-    filter: invert();
 }

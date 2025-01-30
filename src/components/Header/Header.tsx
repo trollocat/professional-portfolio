@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
-import "./Header.css"
-import LanguageToggle from '../Toggles/LanguageToggle';
-import ThemeToggle from '../Toggles/ThemeToggle';
+import LanguageToggle from '../Toggles/Language/LanguageToggle';
+import ThemeToggle from '../Toggles/Theme/ThemeToggle';
+import "./Header.css";
 
 import { useTranslation } from "react-i18next";
 

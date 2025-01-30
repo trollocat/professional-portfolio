@@ -1,16 +1,17 @@
-import "./Projects.css"
+import { useTranslation } from "react-i18next";
+import Project from "../../components/Project/Project";
+import "./Projects.css";
+
 
 const Projects = () => {
+    const { t } = useTranslation("projects");
+    const projects = t('projects', { returnObjects: true });
+
     return (
         <div className="projects-wrapper">
-            <details name="project" className="card">
-                <summary>AirLand</summary>
-                Fictitious shop specialized in Nike Air Force sneakers. Built with React, featuring a responsive design, backend with Node.js and database integration with Firebase...
-            </details>
-            <details name="project" className="card">
-                <summary>AirLand</summary>
-                Fictitious shop specialized in Nike Air Force sneakers. Built with React, featuring a responsive design, backend with Node.js and database integration with Firebase...
-            </details>
+            {Object.entries(projects).map(([namespace]) => (
+                <Project key={namespace} namespace={namespace} />
+            ))}
         </div>
     )
 }

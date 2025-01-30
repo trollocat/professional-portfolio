@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+  /* probably highly incompatible */
+  interpolate-size: allow-keywords;
+
   /* sizes */
   --mobile-small-width: 320px;
   --mobile-big-width: 425px;
@@ -81,12 +84,12 @@
   --bg-2-texture: var(--dark-gray-texture);
 }
 
+html,
 body,
 #root {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -99,6 +102,13 @@ body,
   color: var(--text-1);
   background-color: var(--bg-1);
   background-image: var(--bg-1-texture);
+}
+
+/* main content from the pages */
+#root > div {
+  flex-grow: 1;
+  margin: 10rem auto;
+
 }
 
 button {
@@ -129,4 +139,5 @@ footer {
   color: var(--text-3);
   background-color: var(--bg-2);
   background-image: var(--bg-2-texture);
+  box-shadow: var(--bg-1) 0 -0.5rem 2rem, var(--bg-1) 0 -0.25rem 0.5rem;
 }

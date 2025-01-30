@@ -5,6 +5,7 @@
     background-color: var(--bg-1);
     border-radius: 0.5rem;
     padding: 0.5rem;
+    width: 132px;
     gap: 0.5rem;
     color: var(--text-1);
     font-family: "Montserrat", sans-serif;
@@ -34,6 +35,28 @@
 .language-toggle .flags-selector img.active {
     opacity: 1;
     filter: unset;
+}
+
+.shake {
+    animation: shaker 0.2s ease-in-out infinite;
+}
+
+@keyframes shaker {
+    0% {
+        transform: translate(2px, 0);
+    }
+
+    33% {
+        transform: translate(-2px, 0);
+    }
+
+    66% {
+        transform: translate(2px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .language-toggle .flags-selector img:hover {

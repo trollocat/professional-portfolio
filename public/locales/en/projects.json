@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "airland": {
+      "title": "AirLand",
+      "brief": "Fictitious shop specialized in Nike Air Force sneakers...",
+      "details": "Fictitious shop specialized in Nike Air Force sneakers. Built with React, featuring a responsive design, backend with Node.js and database integration with Firebase...",
+      "sections": [
+        "Overview",
+        "Technologies",
+        "Challenges"
+      ]
+    },
+    "geo-quizzes": {
+      "title": "Geography Quizzes",
+      "brief": "Learn geography by playing games of finding countries...",
+      "details": "Website made for learning geography by playing games of finding countries and selecting the correct flag on several quizzes, supporting an interactive map and several languages.",
+      "sections": [
+        "Overview",
+        "Features",
+        "Languages Supported"
+      ]
+    }
+  }
+}

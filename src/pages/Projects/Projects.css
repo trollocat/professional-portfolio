@@ -1,4 +1,6 @@
-details {
-    width: 50vw;
-    border-radius: 1rem;
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
 }

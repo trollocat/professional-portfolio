@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "airland": {
+      "title": "AirLand",
+      "brief": "Tienda ficticia especializada en zapatillas Nike Air Force...",
+      "details": "Construido con React, diseño responsivo, backend con Node.js e integración de base de datos con Firebase.",
+      "sections": [
+        "Descripción general",
+        "Tecnologías",
+        "Desafíos"
+      ]
+    },
+    "geo-quizzes": {
+      "title": "Quizzes de Geografía",
+      "brief": "Aprende geografía jugando juegos para encontrar países...",
+      "details": "Mapa interactivo, quizzes en varios idiomas y más.",
+      "sections": [
+        "Descripción general",
+        "Características",
+        "Idiomas compatibles"
+      ]
+    }
+  }
+}
