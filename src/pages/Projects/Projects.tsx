@@ -12,6 +12,9 @@ const Projects = () => {
             {Object.entries(projects).map(([namespace]) => (
                 <Project key={namespace} namespace={namespace} />
             ))}
+            {Object.entries(projects).map(([namespace]) => (
+                <Project key={namespace} namespace={namespace} />
+            ))}
         </div>
     )
 }

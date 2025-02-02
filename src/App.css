@@ -49,11 +49,11 @@
   --black-1000: color-mix(in srgb, gray 99%, black);
 
   /* textures */
-  --black-texture: url("./bg-tiles/blackorchid.png");
-  --dark-gray-texture: url("./bg-tiles/dark_Tire.png");
+  --black-texture: url("../bg-tiles/blackorchid.png");
+  --dark-gray-texture: url("../bg-tiles/dark_Tire.png");
 
-  --white-texture: url("./bg-tiles/crossword.png");
-  --light-gray-texture: url("./bg-tiles/dust_scratches.png");
+  --white-texture: url("../bg-tiles/crossword.png");
+  --light-gray-texture: url("../bg-tiles/dust_scratches.png");
 }
 
 .light {
@@ -105,10 +105,12 @@ body,
 }
 
 /* main content from the pages */
-#root > div {
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  margin: 10rem auto;
-
 }
 
 button {
@@ -133,8 +135,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100vw;
-  height: 2rem;
+  min-height: 2rem;
   bottom: 0;
   color: var(--text-3);
   background-color: var(--bg-2);
