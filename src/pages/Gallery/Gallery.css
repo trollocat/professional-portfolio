@@ -1,0 +1,102 @@
+.gallery-grid {
+    --width: 75vw;
+    --height: 173vh;
+    --divisions: 48;
+    --gap: 0.5rem;
+
+    display: grid;
+    margin: 8rem 0;
+
+    grid-template-columns: repeat(var(--divisions), calc((var(--width) - (var(--divisions) - 1) * var(--gap)) / var(--divisions)));
+    grid-template-rows: repeat(var(--divisions), calc((var(--height) - (var(--divisions) - 1) * var(--gap)) / var(--divisions)));
+    grid-auto-flow: dense;
+    gap: var(--gap);
+    width: var(--width);
+    --blur: 0.25rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-grid:hover img {
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
+.gallery-grid:hover img.nsfw {
+    filter: blur(var(--blur));
+    opacity: 0.3;
+}
+
+.gallery-grid button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.gallery-grid img {
+    align-self: stretch;
+    justify-self: stretch;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    transition: filter 0.2s ease-out, opacity 0.2s ease-out;
+    box-shadow: 0 0 2px var(--text-1);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.gallery-grid img:hover {
+    filter: initial;
+    opacity: 1;
+}
+
+.gallery-grid img.nsfw:hover {
+    filter: blur(var(--blur));
+    opacity: 1;
+}
+
+.gallery-grid .nsfw {
+    filter: blur(var(--blur));
+}
+
+.gallery-grid .coverart {
+    object-fit: cover;
+    grid-column: span 12;
+    grid-row: span 12;
+}
+
+.gallery-grid .thumbnail {
+    grid-column: span 12;
+    grid-row: span 6;
+}
+
+.gallery-grid .banner {
+    grid-column: span 36;
+    grid-row: span 6;
+}
+
+.gallery-grid .smallbanner {
+    grid-column: span 24;
+    grid-row: span 6;
+}
+
+.image-viewer {
+    background-color: transparent;
+}
+
+::backdrop {
+    background-color: var(--background-1);
+}
+
+.image-viewer>.selected-image {
+    max-width: 90vw;
+    max-height: 90vh;
+}

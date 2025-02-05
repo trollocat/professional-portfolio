@@ -84,15 +84,17 @@
   --bg-2-texture: var(--dark-gray-texture);
 }
 
-html,
-body,
-#root {
+body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
   display: flex;
   flex-direction: column;
 
-  margin: 0;
-  padding: 0;
+  padding-right: calc(100vw - 100%);
 
   min-height: 100vh;
 

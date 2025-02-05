@@ -2,8 +2,10 @@
   "projects": {
     "airland": {
       "title": "AirLand",
+      "icon": "./projects/airland/icon.svg",
       "brief": "Fictitious shop specialized in Nike Air Force sneakers...",
       "details": "Fictitious shop specialized in Nike Air Force sneakers. Built with React, featuring a responsive design, backend with Node.js and database integration with Firebase...",
+      "screenshot": "./projects/airland/screenshot.png",
       "sections": [
         "Overview",
         "Technologies",
@@ -12,8 +14,10 @@
     },
     "geo-quizzes": {
       "title": "Geography Quizzes",
+      "icon": "./projects/geography/icon.svg",
       "brief": "Learn geography by playing games of finding countries...",
       "details": "Website made for learning geography by playing games of finding countries and selecting the correct flag on several quizzes, supporting an interactive map and several languages.",
+      "screenshot": "./projects/geography/screenshot.png",
       "sections": [
         "Overview",
         "Features",

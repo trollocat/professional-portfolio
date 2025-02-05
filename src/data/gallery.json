@@ -1,0 +1,106 @@
+{
+  "thumbnails": [
+    {
+      "src": "./gallery/thumbnails/257-media-vault-thumbnail-white.webp",
+      "alt": "257 Media Vault Thumbnail White"
+    },
+    {
+      "src": "./gallery/thumbnails/alien-basketball.webp",
+      "alt": "Alien Basketball"
+    },
+    {
+      "src": "./gallery/thumbnails/bite-me.webp",
+      "alt": "Bite Me"
+    },
+    {
+      "src": "./gallery/thumbnails/blair-channel-trailer.webp",
+      "alt": "Blair Channel Trailer"
+    },
+    {
+      "src": "./gallery/thumbnails/easter.webp",
+      "alt": "Easter"
+    },
+    {
+      "src": "./gallery/thumbnails/fang-crunch.webp",
+      "alt": "Fang Crunch"
+    },
+    {
+      "src": "./gallery/thumbnails/first-vlog.webp",
+      "alt": "First Vlog"
+    },
+    {
+      "src": "./gallery/thumbnails/krushfunk-dj-set-bts.webp",
+      "alt": "Krushfunk Dj Set Bts"
+    },
+    {
+      "src": "./gallery/thumbnails/marcopolo.webp",
+      "alt": "Marcopolo"
+    },
+    {
+      "src": "./gallery/thumbnails/mortuary-assistant-stream-highlights.webp",
+      "alt": "Mortuary Assistant Stream Highlights"
+    },
+    {
+      "src": "./gallery/thumbnails/nsfw-dolls-kill-haul.webp",
+      "alt": "Nsfw Dolls Kill Haul"
+    },
+    {
+      "src": "./gallery/thumbnails/nsfw-vegas-hot-tub-stream.webp",
+      "alt": "Nsfw Vegas Hot Tub Stream"
+    },
+    {
+      "src": "./gallery/thumbnails/photo-shoot.webp",
+      "alt": "Photo Shoot"
+    },
+    {
+      "src": "./gallery/thumbnails/pokemon-cards.webp",
+      "alt": "Pokemon Cards"
+    },
+    {
+      "src": "./gallery/thumbnails/rock-paper-scissors-dating-show.webp",
+      "alt": "Rock Paper Scissors Dating Show"
+    }
+  ],
+  "coverarts": [
+    {
+      "src": "./gallery/coverarts/ETERNAL.webp",
+      "alt": "Eternal"
+    },
+    {
+      "src": "./gallery/coverarts/her loss.webp",
+      "alt": "Her Loss"
+    },
+    {
+      "src": "./gallery/coverarts/is-it-worth-it.webp",
+      "alt": "Is It Worth It"
+    },
+    {
+      "src": "./gallery/coverarts/nsfw-dedline-collab.webp",
+      "alt": "Nsfw Dedline Collab"
+    },
+    {
+      "src": "./gallery/coverarts/youngx777-rage.webp",
+      "alt": "Youngx777 Rage"
+    }
+  ],
+  "banners": [
+    {
+      "src": "./gallery/banners/nsfw-ahqua-banner.webp",
+      "alt": "Nsfw Ahqua Banner"
+    },
+    {
+      "src": "./gallery/banners/nsfw-blair-bunny-banner.webp",
+      "alt": "Nsfw Blair Bunny Banner"
+    },
+    {
+      "src": "./gallery/banners/nsfw-cute-freak-banner.webp",
+      "alt": "Nsfw Cute Freak Banner"
+    }
+  ],
+  "smallbanners": [
+    {
+      "src": "./gallery/smallbanners/nsfw-cayyay-banner-fansly.webp",
+      "alt": "Nsfw Cayyay Banner Fansly"
+    }
+  ]
+}

@@ -10,10 +10,13 @@
 }
 
 .expandable-container.collapsed {
-    height: 8rem;
+    min-height: 11rem;
+    height: 11rem;
+
 }
 
 .expandable-container.expanded {
+    min-height: 20rem;
     height: 20rem;
     overflow: hidden;
 }
@@ -27,12 +30,39 @@ article {
 }
 
 article .content {
+    display: flex;
+    flex-wrap: wrap;
     width: 65ch;
     font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 article h1 {
-    margin: 0;
+    height: fit-content;
+    margin: auto 0;
+    margin-left: 2rem;
+}
+
+article p {
+    flex-basis: 100%;
+}
+
+article .icon-container {
+    display: inline-flex;
+    height: 3rem;
+    padding: 1rem;
+    background-color: var(--text-1);
+    border-radius: 1rem;
+}
+
+article .icon-container img {
+    height: 100%;
+}
+
+article>.content>img {
+    width: 100%;
+    /* to set the height of the screenshot before it loads based on its 100% width */
+    aspect-ratio: 1920/953;
 }
 
 .technologies {
@@ -43,7 +73,7 @@ article h1 {
 article .handle {
     height: .5rem;
     margin: 0 auto;
-    max-width: 20rem;
+    width: 20rem;
     border-radius: 1rem;
     background-color: var(--text-2);
 }

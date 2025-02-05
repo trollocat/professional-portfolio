@@ -2,8 +2,10 @@
   "projects": {
     "airland": {
       "title": "AirLand",
+      "icon": "./projects/airland/icon.svg",
       "brief": "Tienda ficticia especializada en zapatillas Nike Air Force...",
       "details": "Construido con React, diseño responsivo, backend con Node.js e integración de base de datos con Firebase.",
+      "screenshot": "./projects/airland/screenshot.png",
       "sections": [
         "Descripción general",
         "Tecnologías",
@@ -12,8 +14,10 @@
     },
     "geo-quizzes": {
       "title": "Quizzes de Geografía",
+      "icon": "./projects/geography/icon.svg",
       "brief": "Aprende geografía jugando juegos para encontrar países...",
       "details": "Mapa interactivo, quizzes en varios idiomas y más.",
+      "screenshot": "./projects/geography/screenshot.png",
       "sections": [
         "Descripción general",
         "Características",
