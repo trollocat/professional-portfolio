@@ -36,16 +36,38 @@ const Gallery = () => {
         images && (
             <div className="gallery-grid">
                 {images.map((image) => (
-                    <>
-                        {/* <div className="image-container" key={image.alt + "-container"}> */}
-                        {!nsfwEnabled && image.src.includes("nsfw") ? (
+                    <div
+                        key={image.alt + "-container"}
+                        className="image-container"
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                            // keyboard accessibility
+                            if (e.key === "Enter") {
+                                const img = e.currentTarget.querySelector("img") as HTMLImageElement;
+                                if (img) {
+                                    setSelectedImage(img.src.replace("-preview", ""));
+                                    imageModal();
+                                }
+                            }
+                        }}
+                    >
+                        {image.src.includes("nsfw") ? (
                             <button
                                 type="button"
                                 key={image.alt + "-nsfw-button"}
                                 className="nsfw-button"
                                 onClick={() => setNsfwEnabled(!nsfwEnabled)}
+                                onKeyDown={(e) => {
+                                    // keyboard accessibility
+                                    if (e.key === "Enter") {
+                                        e.preventDefault();
+
+                                        e.stopPropagation();
+                                        setNsfwEnabled(!nsfwEnabled)
+                                    }
+                                }}
                             >
-                                {nsfwEnabled ? "Disable" : "Enable"} NSFW
+                                {nsfwEnabled ? "Disable" : "Enable"} NSFW ⚠
                             </button>
                         ) : null}
                         <img
@@ -58,19 +80,36 @@ const Gallery = () => {
                                 imageModal()
                             }}
                         />
-                        {/* </div> */}
-                    </>
+                    </div>
                 ))}
                 <dialog
                     ref={dialogRef}
                     className="image-viewer"
+                    tabIndex={0}
                     onClick={(e) => {
                         if (e.currentTarget === e.target) {
                             setSelectedImage(null)
                             imageModal()
                         }
-                    }}>
-                    {selectedImage && <img className="selected-image" src={selectedImage} />}
+                    }}
+                    onKeyDown={(e) => {
+                        // keyboard accessibility
+                        if (e.key === "Enter") {
+                            if (e.currentTarget === e.target) {
+                                setSelectedImage(null)
+                                imageModal()
+                            }
+                        }
+                    }}
+                >
+                    {selectedImage && (
+                        <>
+                            <img className="selected-image" src={selectedImage} />
+                            <div className="image-info">
+                                todo
+                            </div>
+                        </>
+                    )}
                 </dialog>
             </div>
         )

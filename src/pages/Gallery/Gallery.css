@@ -12,25 +12,38 @@
     grid-auto-flow: dense;
     gap: var(--gap);
     width: var(--width);
-    --blur: 0.25rem;
+    --blur: 0.75rem;
 }
 
 .image-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
 }
 
-.gallery-grid:hover img {
+.image-container>img {
+    object-fit: contain;
+}
+
+.gallery-grid:hover>.image-container {
+    transition: opacity 0.2s ease-out;
+    opacity: 0.3;
+}
+
+.gallery-grid:hover>.image-container>img {
     filter: grayscale(100%);
-    opacity: 0.3;
 }
 
-.gallery-grid:hover img.nsfw {
-    filter: blur(var(--blur));
-    opacity: 0.3;
+.gallery-grid:hover>.image-container>img.nsfw {
+    filter: grayscale(100%) blur(var(--blur));
 }
 
-.gallery-grid button {
+.gallery-grid>.image-container>.nsfw-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -39,51 +52,51 @@
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
 }
 
-.gallery-grid img {
-    align-self: stretch;
-    justify-self: stretch;
-    object-fit: contain;
-    border-radius: 0.5rem;
-    transition: filter 0.2s ease-out, opacity 0.2s ease-out;
+.gallery-grid>.image-container>img {
+    transition: filter 0.2s ease-out;
     box-shadow: 0 0 2px var(--text-1);
-    -webkit-user-select: none;
-    user-select: none;
 }
 
-.gallery-grid img:hover {
+.gallery-grid>.image-container:hover {
+    opacity: 1;
+}
+
+/* the following wacky :has() selectors are needed for styling the filter when hovering the nsfw button */
+
+.gallery-grid>.image-container:has(button:hover)>img,
+.gallery-grid>.image-container>img:hover {
     filter: initial;
-    opacity: 1;
 }
 
-.gallery-grid img.nsfw:hover {
-    filter: blur(var(--blur));
-    opacity: 1;
-}
-
-.gallery-grid .nsfw {
+.gallery-grid>.image-container:has(button:hover)>img.nsfw,
+.gallery-grid>.image-container>img.nsfw:hover,
+.gallery-grid>.image-container>img.nsfw {
     filter: blur(var(--blur));
 }
 
-.gallery-grid .coverart {
-    object-fit: cover;
+.gallery-grid .image-container:has(img.coverart) {
     grid-column: span 12;
     grid-row: span 12;
 }
 
-.gallery-grid .thumbnail {
+.gallery-grid .image-container .coverart {
+    object-fit: cover;
+}
+
+.gallery-grid .image-container:has(img.thumbnail) {
     grid-column: span 12;
     grid-row: span 6;
 }
 
-.gallery-grid .banner {
+.gallery-grid .image-container:has(img.banner) {
     grid-column: span 36;
     grid-row: span 6;
 }
 
-.gallery-grid .smallbanner {
+.gallery-grid .image-container:has(img.smallbanner) {
     grid-column: span 24;
     grid-row: span 6;
 }
@@ -92,11 +105,16 @@
     background-color: transparent;
 }
 
+.image-viewer:focus {
+    border-color: var(--text-1);
+}
+
 ::backdrop {
-    background-color: var(--background-1);
+    background-color: var(--bg-1);
+    opacity: 0.75;
 }
 
 .image-viewer>.selected-image {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 95vw;
+    max-height: 70vh;
 }

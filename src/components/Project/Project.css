@@ -49,14 +49,18 @@ article p {
 
 article .icon-container {
     display: inline-flex;
-    height: 3rem;
-    padding: 1rem;
+    height: 4rem;
+    padding: .75rem;
     background-color: var(--text-1);
     border-radius: 1rem;
 }
 
-article .icon-container img {
+article>.icon-container>img {
     height: 100%;
+}
+
+.light .icon-container>img {
+    filter: invert(1);
 }
 
 article>.content>img {

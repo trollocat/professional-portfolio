@@ -9,7 +9,7 @@ const Projects = () => {
 
     return (
         <div className="projects-wrapper">
-            {Object.entries(projects).map(([namespace]) => (
+            {Object.entries(projects).reverse().map(([namespace]) => (
                 <Project key={namespace} namespace={namespace} />
             ))}
         </div>
