@@ -64,6 +64,7 @@
   --bg-3: var(--white-800);
   --fg-1: var(--white-600);
   --fg-2: var(--white-400);
+  --fg-3: var(--white-200);
   --button-bg: var(--primary-600);
   --button-fg: var(--primary-400);
   --button-text: var(--white-1000);
@@ -82,6 +83,7 @@
   --bg-3: var(--black-200);
   --fg-1: var(--black-400);
   --fg-2: var(--black-600);
+  --fg-3: var(--black-800);
   --button-bg: var(--primary-600);
   --button-fg: var(--primary-400);
   --button-text: var(--white-1000);
@@ -118,7 +120,6 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   flex-grow: 1;
 }

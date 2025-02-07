@@ -1,4 +1,9 @@
-.hero-wrapper {
+.home-wrapper {
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+}
+
+.hero {
     display: flex;
     flex-wrap: wrap;
     width: 50vw;
@@ -18,7 +23,7 @@
     position: absolute;
     left: 0;
     bottom: -2rem;
-    height: 30rem;
+    height: calc(min(25vw, 30rem));
     clip-path: inset(0 0 2rem 0);
     overflow: visible;
 }
@@ -42,7 +47,21 @@
     border-radius: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
-    height: 6rem;
+    height: 4rem;
+}
+
+.hero>.card {
+    transition: transform 0.50s, border-color 0.5s;
+}
+
+.hero>.card:hover {
+    transform: scale(1.01);
+    border-color: var(--accent)
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-2);
 }
 
 .hero-secondary p {
@@ -55,6 +74,37 @@
     border-bottom-right-radius: 3rem;
 }
 
+.scroll-hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    height: 6rem;
+    font-size: 1.50rem;
+    color: var(--fg-2);
+    gap: 0.5rem;
+}
+
+.scroll-hint:hover svg {
+    animation: bob 0.75s ease-in-out infinite;
+}
+
+@keyframes bob {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(.325rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
 @media (max-width: 1366px) {
     .hero-main img {
         height: 25rem;
@@ -62,7 +112,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero-wrapper {
+    .hero {
         width: 90vw;
     }
 
@@ -85,7 +135,7 @@
 }
 
 @media (max-width: 480px) {
-    .hero-wrapper {
+    .hero {
         width: 90vw;
     }
 

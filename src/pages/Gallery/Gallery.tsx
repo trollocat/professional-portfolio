@@ -34,7 +34,7 @@ const Gallery = () => {
 
     return (
         images && (
-            <div className="gallery-grid">
+            <div className="gallery-grid card">
                 {images.map((image) => (
                     <div
                         key={image.alt + "-container"}
@@ -106,7 +106,6 @@ const Gallery = () => {
                         <>
                             <img className="selected-image" src={selectedImage} />
                             <div className="image-info">
-                                todo
                             </div>
                         </>
                     )}

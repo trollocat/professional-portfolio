@@ -16,8 +16,8 @@
   "home": {
     "introduction": "Hi! My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>, based in <strong>Argentina</strong>.",
     "calltoaction": {
-      "button1": "My projects",
-      "button2": "My designs"
+      "button1": "View projects",
+      "button2": "Contact me"
     }
   }
 }
