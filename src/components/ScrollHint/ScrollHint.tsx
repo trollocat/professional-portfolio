@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import ArrowDown from "../../components/Icons/ArrowDown";
+import ArrowDown from "../Icons/ArrowDown";
 import { useTranslation } from "react-i18next";
 import "./ScrollHint.css"
 
