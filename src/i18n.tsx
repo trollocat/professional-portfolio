@@ -1,18 +1,20 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpBackend from 'i18next-http-backend';
+import HttpApi from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
+export const defaultNS = 'translation';
+
 i18n
-  .use(HttpBackend)
-  .use(LanguageDetector)
   .use(initReactI18next)
+  .use(HttpApi)
+  .use(LanguageDetector)
   .init({
-    fallbackLng: 'en',
-    ns: ["translation", "projects"],
-    // debug: true,
+    fallbackLng: "en",
+    defaultNS,
+    debug: true,
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
     interpolation: {
       escapeValue: false,

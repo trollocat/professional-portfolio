@@ -42,7 +42,8 @@ nav ul {
 }
 
 nav ul li {
-  border-radius: 1rem 1rem 0 0;
+  border-top-left-radius: var(--border-radius-1);
+  border-top-right-radius: var(--border-radius-1);
   background-color: unset;
   flex-grow: 1;
 }
@@ -70,7 +71,7 @@ nav ul li a.active .light-bar {
   height: 0.1rem;
   background-color: var(--accent);
   box-shadow: 0 0 .125rem .125rem var(--accent);
-  border-radius: 1rem;
+  border-radius: var(--border-radius-1);
 }
 
 @media (max-width: 1366px) {

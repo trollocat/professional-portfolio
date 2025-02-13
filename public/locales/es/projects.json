@@ -1,27 +1,63 @@
 {
+  "subtitles": {
+    "details": "Descripción del Proyecto:",
+    "learned": "Puntos Clave Aprendidos:",
+    "technologies": "Tecnologías:"
+  },
   "projects": {
     "airland": {
       "title": "AirLand",
-      "icon": "./projects/airland/icon.svg",
-      "brief": "Tienda ficticia especializada en zapatillas Nike Air Force...",
-      "details": "Construido con React, diseño responsivo, backend con Node.js e integración de base de datos con Firebase.",
-      "screenshot": "./projects/airland/screenshot.png",
-      "sections": [
-        "Descripción general",
-        "Tecnologías",
-        "Desafíos"
+      "subtitle": "Tienda virtual de zapatillas deportivas",
+      "details": "Página web responsiva que cuenta con todas las características necesarias para un <strong>e-commerce</strong>: Página de inicio con llamadas de acción, listado de productos con filtros, detalles del producto, reseñas, carrito de compras, inicio de sesión, pasarela de pagos, panel de administrador y correos electrónicos con ofertas automáticos.\nHecha como proyecto grupal para un bootcamp, éramos <strong>7 desarrolladores</strong>, <strong>1 scrum master</strong> y <strong>1 product owner</strong>. Se realizaron <strong>dailies</strong> en el equipo desarrolladores, un <strong>sprint cada dos semanas</strong> y una <strong>presentación final</strong>, para un tiempo total de <strong>5 semanas</strong>.\nEl tiempo acotado nos hizo tomar una mentalidad orientada a resultados, en la cual nos dividimos las tareas usando <strong>Jira</strong> para llegar a un <strong>MVP (producto mínimo viable)</strong> en apenas <strong>2 semanas</strong>.",
+      "learned": [
+        "Formé parte de un <strong>marco de trabajo Scrum</strong> como desarrollador",
+        "Implementé un estado global utilizando <strong>React Redux Toolkit</strong>",
+        "<strong>Diseñé un panel de administrador</strong> bien equipado para gestionar los productos y ventas",
+        "Creé una <strong>API REST con Express.js</strong> comunicada a una <strong>base de datos Firebase (NoSQL)</strong>"
+      ],
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "MercadoPago"
       ]
     },
-    "geo-quizzes": {
-      "title": "Quizzes de Geografía",
-      "icon": "./projects/geography/icon.svg",
-      "brief": "Aprende geografía jugando juegos para encontrar países...",
-      "details": "Mapa interactivo, quizzes en varios idiomas y más.",
-      "screenshot": "./projects/geography/screenshot.png",
-      "sections": [
-        "Descripción general",
-        "Características",
-        "Idiomas compatibles"
+    "geography": {
+      "title": "Geography Quizzes",
+      "subtitle": "Página para aprender geografía",
+      "details": "Proyecto personal en desarrollo. Será una plataforma para aprender a ubicar <strong>países</strong> y <strong>ciudades</strong> en el mundo, además de reconocer sus <strong>banderas</strong> y otros datos relevantes. El usuario podrá iniciar sesión para hacer un seguimiento de su <strong>progreso de aprendizaje</strong>, lo que permitirá sugerir <strong>ejercicios</strong> que ayuden a potenciar su retención de información.\nCon un enfoque en el <strong>rendimiento</strong> y la <strong>experiencia de usuario</strong>, será una herramienta versátil y satisfactoria para aprender diversos tipos de información en un mismo lugar, sin necesidad de usar varias páginas distintas.",
+      "learned": [
+        "Comencé a utilizar TypeScript para <strong>aumentar la robustez de mi código</strong>",
+        "Utilicé MapLibre para crear un <strong>mapa interactivo</strong> y conectarlo al <strong>estado global con Zustand</strong>",
+        "Aprendí a representar <strong>miles de datos geográficos</strong> en simultáneo, con excelente rendimiento y buena visibilidad"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Zustand",
+        "MapLibre",
+        "Node.js",
+        "PostgreSQL",
+        "i18next"
+      ]
+    },
+    "portfolio": {
+      "title": "Portafolio Profesional",
+      "subtitle": "Esta página!",
+      "details": "Construido con <strong>React</strong>, con diseño responsivo y localización en español e inglés. Con el objetivo de <strong>mostrarme al mundo</strong> y poder tener la chance de formar parte en un <strong>equipo de desarrollo</strong>.",
+      "learned": [
+        "<strong>Localicé a español e inglés</strong> con i18next, utilizando las <strong>mejores prácticas con TypeScript</strong>",
+        "Diseñé el <strong>prototipo de alta fidelidad</strong> en Figma primero para facilitar el pasaje a código",
+        "Automatizé <strong>despliegues con CI/CD</strong> en Vercel"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Vercel",
+        "i18next"
       ]
     }
   }

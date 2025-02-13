@@ -1,8 +1,8 @@
 {
     "nsfw": {
-        "enable": "Show",
-        "disable": "Hide",
-        "nsfw-tooltip": "adult content"
+        "enable": "Mostrar",
+        "disable": "Ocultar",
+        "nsfw-tooltip": "contenido para adultos"
     },
     "gallery": [
         {

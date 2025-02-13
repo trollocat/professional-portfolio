@@ -12,12 +12,5 @@
     "projects": "Proyectos",
     "gallery": "Galería",
     "contact": "Contacto"
-  },
-  "home": {
-    "introduction": "Hola! Me llamo <strong>Joan Gonzalez</strong>, soy <strong>desarrollador frontend</strong> y <strong>diseñador gráfico</strong>, de <strong>Argentina</strong>.",
-    "calltoaction": {
-      "button1": "Ver proyectos",
-      "button2": "Contactame"
-    }
-  }
+  }  
 }

@@ -1,4 +1,4 @@
-const JavascriptIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const JavaScriptIcon = (props: React.SVGProps<SVGSVGElement>) => {
     return (
         <svg height="2em" width="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" {...props}>
             <title>JavaScript</title>
@@ -7,4 +7,4 @@ const JavascriptIcon = (props: React.SVGProps<SVGSVGElement>) => {
     )
 }
 
-export default JavascriptIcon;
+export default JavaScriptIcon;

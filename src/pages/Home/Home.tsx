@@ -1,11 +1,11 @@
 import { Trans, useTranslation } from "react-i18next";
 import './Home.css';
-import ArrowDown from "../../components/Icons/arrowdown";
+import Timeline from "../../components/Timeline/Timeline";
 import { NavLink } from "react-router";
+import ScrollHint from "../../components/ScrollHint/ScrollHint";
 
 export default function Home() {
-  const { t } = useTranslation();
-
+  const { t } = useTranslation("home");
   return (
     <div className="home-wrapper">
       <div className="hero" >
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <NavLink to="/projects" className="hero-secondary card">
           <p >
-            {t('home.calltoaction.button1')}
+            {t(`home.calltoaction.button1`)}
           </p>
         </NavLink>
         <NavLink to="/contact" className="hero-secondary card">
@@ -27,13 +27,8 @@ export default function Home() {
           </p>
         </NavLink>
       </div>
-      <div className="scroll-hint">
-        <ArrowDown />
-        <span>
-          More about me (wip)
-        </span>
-        <ArrowDown />
-      </div>
+      <ScrollHint />
+      <Timeline />
     </div>
   )
 }

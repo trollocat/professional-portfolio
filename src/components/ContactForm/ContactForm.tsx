@@ -1,47 +1,52 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { useTranslation } from "react-i18next";
 import "./ContactForm.css";
 
 const ExampleForm = () => {
     const [state, handleSubmit] = useForm("mzzdgnow");
+    const { t } = useTranslation("contact");
 
     if (state.succeeded) {
         return (
             <div className="form-success card">
-                <p>Thank you for reaching out! <br /> I'll be reading your message as soon as possible</p>
-                <button type="button" className="fs-button" onClick={() => window.location.reload()}>Refresh</button>
+                <p>
+                    {t('contact.form.success.message')}
+                </p>
+                <button type="button" className="button" onClick={() => window.location.reload()}>
+                    {t('contact.form.success.button')}
+                </button>
             </div>
         );
     }
 
     return (
-        <form className="fs-form card" onSubmit={handleSubmit}>
-            <div className="fs-field">
-                <label className="fs-label" htmlFor="name">
-                    Your Name
+        <form className="form card" onSubmit={handleSubmit}>
+            <div className="field">
+                <label className="label" htmlFor="name">
+                    {t('contact.form.name.label')}
                 </label>
-                <input className="fs-input" id="name" name="name" required />
+                <input className="input" id="name" name="name" required />
                 <ValidationError prefix="Name" field="name" errors={state.errors} />
+                {t('contact.form.name.description') && <p className="description">{t('contact.form.name.description')}</p>}
             </div>
-            <div className="fs-field">
-                <label className="fs-label" htmlFor="email">
-                    Email
+            <div className="field">
+                <label className="label" htmlFor="email">
+                    {t('contact.form.email.label')}
                 </label>
-                <input className="fs-input" id="email" type="email" name="email" required />
+                <input className="input" id="email" type="email" name="email" required />
                 <ValidationError prefix="Email" field="email" errors={state.errors} />
-                <p className="fs-description">
-                    This will help me respond to your query via an email.
-                </p>
+                {t('contact.form.email.description') && <p className="description">{t('contact.form.email.description')}</p>}
             </div>
-            <div className="fs-field">
-                <label className="fs-label" htmlFor="message">
-                    Message
+            <div className="field">
+                <label className="label" htmlFor="message">
+                    {t('contact.form.message.label')}
                 </label>
                 <textarea
-                    className="fs-textarea"
+                    className="textarea"
                     id="message"
                     name="message"
                     required
-                    rows={1}
+                    rows={3}
                     onInput={(e) => {
                         const target = e.target as HTMLTextAreaElement;
                         target.style.height = "auto";
@@ -49,11 +54,11 @@ const ExampleForm = () => {
                     }}
                 />
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
-                <p className="fs-description">What would you like to discuss?</p>
+                {t('contact.form.message.description') && <p className="description">{t('contact.form.message.description')}</p>}
             </div>
-            <div className="fs-button-group">
-                <button className="fs-button" type="submit" disabled={state.submitting}>
-                    Submit
+            <div className="button-group">
+                <button className="button" type="submit" disabled={state.submitting}>
+                    {t('contact.form.submit.text')}
                 </button>
             </div>
         </form>

@@ -1,0 +1,25 @@
+{
+    "contact": {
+        "form": {
+            "name": {
+                "label": "Tu nombre",
+                "description": ""
+            },
+            "email": {
+                "label": "Email",
+                "description": ""
+            },
+            "message": {
+                "label": "Mensaje",
+                "description": ""
+            },
+            "submit": {
+                "text": "Enviar"
+            },
+            "success": {
+                "message": "Gracias por contactarte!<br/>Voy a estar leyendo tu mensaje lo antes posible",
+                "button": "Refrescar"
+            }
+        }
+    }
+}

@@ -1,27 +1,63 @@
 {
+  "subtitles": {
+    "details": "Project Description:",
+    "learned": "Key Aspects Learned:",
+    "technologies": "Technologies:"
+  },
   "projects": {
     "airland": {
       "title": "AirLand",
-      "icon": "./projects/airland/icon.svg",
-      "brief": "Fictitious shop specialized in Nike Air Force sneakers...",
-      "details": "Fictitious shop specialized in Nike Air Force sneakers. Built with React, featuring a responsive design, backend with Node.js and database integration with Firebase...",
-      "screenshot": "./projects/airland/screenshot.png",
-      "sections": [
-        "Overview",
-        "Technologies",
-        "Challenges"
+      "subtitle": "Online store for sports sneakers",
+      "details": "A responsive website that includes all the essential features for an <strong>e-commerce platform</strong>: homepage with call-to-action elements, product listing with filters, product details, reviews, shopping cart, login functionality, payment gateway, admin panel, and automated promotional emails.\nDeveloped as a group project for a bootcamp, our team consisted of <strong>7 developers</strong>, <strong>1 Scrum Master</strong>, and <strong>1 Product Owner</strong>. We conducted <strong>dailies</strong> within the development team, followed a <strong>two-week sprint</strong> cycle, and delivered a <strong>final presentation</strong>, completing the project in a total of <strong>5 weeks</strong>.\nThe tight timeframe pushed us to adopt a results-oriented mindset, dividing tasks using <strong>Jira</strong> to achieve an <strong>MVP (Minimum Viable Product)</strong> within just <strong>2 weeks</strong>.",
+      "learned": [
+        "Participated as a developer in a <strong>Scrum framework</strong>",
+        "Implemented global state management using <strong>React Redux Toolkit</strong>",
+        "<strong>Designed a detailed administrator panel</strong> to manage products and sales",
+        "Created a <strong>REST API with Express.js</strong> connected to a <strong>Firebase (NoSQL) database</strong>"
+      ],
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "MercadoPago"
       ]
     },
-    "geo-quizzes": {
+    "geography": {
       "title": "Geography Quizzes",
-      "icon": "./projects/geography/icon.svg",
-      "brief": "Learn geography by playing games of finding countries...",
-      "details": "Website made for learning geography by playing games of finding countries and selecting the correct flag on several quizzes, supporting an interactive map and several languages.",
-      "screenshot": "./projects/geography/screenshot.png",
-      "sections": [
-        "Overview",
-        "Features",
-        "Languages Supported"
+      "subtitle": "Website for learning geography",
+      "details": "A personal project in development. It will be a platform to learn how to locate <strong>countries</strong> and <strong>cities</strong> on the map, as well as recognize their <strong>flags</strong> and other relevant data. The user will log in to track their <strong>learning progress</strong>, allowing the system to suggest <strong>exercises</strong> to improve information retention.\nWith a focus on <strong>performance</strong> and <strong>user experience</strong>, it will be a versatile and enjoyable tool to learn different types of information in one place, so there's no need to use separate pages for each subject.",
+      "learned": [
+        "Started using TypeScript to build <strong>more robust and debuggable code</strong>",
+        "Used MapLibre to create an <strong>interactive map</strong> and connect it to <strong>global state with Zustand</strong>",
+        "Learned how to <strong>visualize thousands of geographic data points simultaneously</strong>, with excellent performance and good readability"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Zustand",
+        "MapLibre",
+        "Node.js",
+        "PostgreSQL",
+        "i18next"
+      ]
+    },
+    "portfolio": {
+      "title": "Professional Portfolio",
+      "subtitle": "This website!",
+      "details": "Built with <strong>React</strong>, featuring a responsive design and localization in both Spanish and English. The goal is to <strong>showcase myself to the world</strong> and have the opportunity to be part of a <strong>development team</strong>.",
+      "learned": [
+        "<strong>Localized the site in Spanish and English</strong> using i18next, following <strong>best practices with TypeScript</strong>",
+        "Designed a <strong>high fidelity prototype in Figma</strong> first to streamline the coding process",
+        "Automated <strong>deployments with CI/CD</strong> on Vercel"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Vercel",
+        "i18next"
       ]
     }
   }

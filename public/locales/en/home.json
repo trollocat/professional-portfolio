@@ -1,0 +1,38 @@
+{
+    "home": {
+        "introduction": "Hi! My name is <strong>Joan Gonzalez</strong>, I’m a <strong>frontend developer</strong> and <strong>graphic designer</strong>, based in <strong>Argentina</strong>.",
+        "calltoaction": {
+            "button1": "View projects",
+            "button2": "Contact me"
+        },
+        "scroll-hint": "Scroll down to know more about me",
+        "timeline": {
+            "2025": [
+                "Published this portfolio to <strong>showcase my work</strong> and facilitate <strong>contacting me</strong>"
+            ],
+            "2024": [
+                "Started working on a personal project about a geography learning website, with features like <strong>interactive maps, quizzes and leaderboards</strong>"
+            ],
+            "2023": [
+                "Successfully delivered a fully featured <strong>e-commerce website</strong> as part of a developer team, implementing <strong>payment gateways, user authentication, and responsive design</strong>",
+                "Gained hands-on experience in <strong>Agile methodologies</strong>, leading sprint planning and delivering features on time within a <strong>Scrum framework</strong>",
+                "Completed an intensive <strong>fullstack web development bootcamp</strong>, mastering <strong>frontend and backend technologies</strong>, version control (Git), and deployment workflows"
+            ],
+            "2022": [
+                "Joined 25/7 Media Inc. as a graphic designer, creating <strong>social media branding, album covers, and merchandise ads</strong>, while <strong>self-teaching web development fundamentals</strong>"
+            ],
+            "2021": [
+                "Specialized in <strong>YouTube thumbnails and social media branding</strong>, collaborating with female content creators to grow their <strong>online presence and audience engagement</strong>"
+            ],
+            "2020": [
+                "Automated the product image creation process using <strong>scripting tools</strong>, saving <strong>hundreds of hours</strong> and improving workflow efficiency",
+                "Designed marketing materials and ads at a cosmetics company, enhancing <strong>brand consistency</strong> and increasing <strong>customer engagement</strong>"
+            ],
+            "2019": [
+                "Developed proficiency in <strong>Excel Power Query and VBA scripting</strong>, streamlining data management processes",
+                "Interned as a stock controller at an electronics factory, gaining foundational experience in <strong>data organization and problem-solving</strong>",
+                "Graduated high school, completing a final project in <strong>C++</strong>: programming an <strong>Arduino-based electronic drum kit</strong>"
+            ]
+        }
+    }
+}

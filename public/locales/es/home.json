@@ -1,0 +1,38 @@
+{
+    "home": {
+        "introduction": "Hola! Me llamo <strong>Joan Gonzalez</strong>, soy <strong>desarrollador frontend</strong> y <strong>diseñador gráfico</strong>, de <strong>Argentina</strong>.",
+        "calltoaction": {
+            "button1": "Ver proyectos",
+            "button2": "Contactame"
+        },
+        "scroll-hint": "Scrolleá para saber más sobre mí",
+        "timeline": {
+            "2025": [
+                "Publiqué este portfolio para <strong>mostrar mi trabajo</strong> y facilitar el <strong>contacto conmigo</strong>"
+            ],
+            "2024": [
+                "Empecé a trabajar en un sitio web de aprendizaje de geografía, gamificando la educación con funciones como <strong>mapas interactivos, quizzes y rankings</strong>, usando el <strong>stack PERN</strong> (PostgreSQL, Express, React, Node.js)"
+            ],
+            "2023": [
+                "Entregué con éxito un <strong>sitio web de e-commerce</strong> completamente funcional como parte de un equipo de desarrollo, implementando <strong>pasarelas de pago, autenticación de usuarios y diseño responsive</strong>",
+                "Adquirí experiencia práctica en <strong>metodologías ágiles</strong>, liderando la planificación de sprints y entregando funcionalidades a tiempo dentro de un <strong>marco Scrum</strong>",
+                "Completé un <strong>bootcamp intensivo de desarrollo web fullstack</strong>, dominando <strong>tecnologías frontend y backend</strong>, control de versiones (Git) y flujos de trabajo de deployment"
+            ],
+            "2022": [
+                "Me uní a 25/7 Media Inc. como diseñador gráfico, creando <strong>branding para redes sociales, portadas de álbumes y anuncios de merchandising</strong>, mientras <strong>aprendía de forma autodidacta los fundamentos del desarrollo web</strong>"
+            ],
+            "2021": [
+                "Me especialicé en <strong>miniaturas para YouTube y branding en redes sociales</strong>, colaborando con creadoras de contenido para hacer crecer su <strong>presencia online y engagement con la audiencia</strong>"
+            ],
+            "2020": [
+                "Automaticé el proceso de creación de imágenes de productos usando <strong>herramientas de scripting</strong>, ahorrando <strong>cientos de horas</strong> y mejorando la eficiencia del flujo de trabajo",
+                "Diseñé materiales de marketing y anuncios en una empresa de cosmética, mejorando la <strong>consistencia de la marca</strong> e incrementando el <strong>engagement de los clientes</strong>"
+            ],
+            "2019": [
+                "Desarrollé habilidades en <strong>Excel Power Query y scripting con VBA</strong>, optimizando procesos de gestión de datos",
+                "Hice una pasantía como controlador de stock en una fábrica de electrónica, adquiriendo experiencia en <strong>organización de datos y resolución de problemas</strong>",
+                "Me gradué del secundario, completando un proyecto final en <strong>C++</strong>: programar una <strong>batería electrónica basada en Arduino</strong>"
+            ]
+        }
+    }
+}

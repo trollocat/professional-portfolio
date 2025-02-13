@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-1);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-2);
     padding: 0.5rem;
     width: 132px;
     gap: 0.5rem;
