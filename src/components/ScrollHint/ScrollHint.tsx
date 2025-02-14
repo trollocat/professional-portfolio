@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import ArrowDown from "../Icons/ArrowDown";
+import ArrowPointingDown from "../Icons/ArrowPointingDown";
 import { useTranslation } from "react-i18next";
 import "./ScrollHint.css"
 
@@ -25,9 +25,9 @@ const ScrollHint = () => {
             animate={{ opacity }}
             transition={{ duration: 0.1, ease: "easeInOut" }}
         >
-            <ArrowDown />
+            <ArrowPointingDown />
             <span>{t("home.scroll-hint")}</span>
-            <ArrowDown />
+            <ArrowPointingDown />
         </motion.div>
     );
 };
